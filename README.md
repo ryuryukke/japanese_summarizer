@@ -1,1 +1,2 @@
-# japanese_summarization
+# japanese_summarizer
+
