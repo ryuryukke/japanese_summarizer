@@ -37,3 +37,11 @@ TextRank algorithm is based on [PageRank algorithm](http://ilpubs.stanford.edu:8
 PageRank algorithm is an algorithm used by Google Search to rank web pages in their search engine results.
 
 The basic idea behind PageRank algorithm is that pages that are linked to are good pages, and links from even more linked pages (i.e., popular pages) are valued highly.
+
+## Reference
+1. [text-summarizer](https://github.com/edubey/text-summarizer)                                                                                                      
+2. [Understand Text Summarization and create your own summarizer in python](https://towardsdatascience.com/understand-text-summarization-and-create-your-own-summarizer-in-python-b26a9f09fc70)                                                                                                                                         
+3. [MeCabを使ってみよう](https://qiita.com/yonedaco/items/27e1ad19132c9f1c9180)                                                                                      
+4. [MeCabをpythonで使うまで](https://qiita.com/Sak1361/items/47e9ec464ccc770cd65c)                                                                                   
+5. [日本語ストップワードの考察](https://mieruca-ai.com/ai/nlp-stopwords/)                                                                                            
+6. [大自然言語時代のための、文章要約](https://qiita.com/icoxfog417/items/d06651db10e27220c819)
