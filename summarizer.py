@@ -85,5 +85,5 @@ def generate_summary(file_name, top_n = 3):
     # Step 5 - Output a summary
     print("Summary: \n", "。".join(summarize_text)+"。")
 
-# make article
+# make a summary
 generate_summary("softbank.txt", 5)
