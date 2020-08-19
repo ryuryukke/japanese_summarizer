@@ -18,7 +18,7 @@ pros: A summary can be more rich than extractive type's one because we can use w
 
 cons: It is difficult to make a summary which is grammatically natural.
 
-## Detail
+## Details
 I extended [text-summarizer](https://github.com/edubey/text-summarizer) to apply to japanese as well.
 
 Similar to the system, I used [TextRank algorithm](https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf) to rank the semantically important sentences and choose the top_n of them to be a summary.
