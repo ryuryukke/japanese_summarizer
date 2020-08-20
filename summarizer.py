@@ -1,7 +1,5 @@
 import nltk
 import MeCab
-import matplotlib.pyplot as plt
-from nltk.corpus import stopwords
 from nltk.cluster.util import cosine_distance
 import numpy as np
 import networkx as nx
@@ -16,7 +14,7 @@ def read_article(file_name):
 def sentence_similarity(sent1, sent2):
     wakati = MeCab.Tagger('-Owakati -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd')
     node1, node2 = wakati.parseToNode(sent1), wakati.parseToNode(sent2)
-    sent1, sent2 = [], []
+    sent1, sent2 = set(), set()
     
     # Exclude blanks and those with specific parts of speech(Adverbs, particles, conjunctions, auxiliary verbs)
     while node1:
@@ -25,7 +23,7 @@ def sentence_similarity(sent1, sent2):
         if word == " " or hinshi in ["副詞", "助詞", "接続詞", "助動詞"]:
             node1 = node1.next
             continue
-        sent1.append(word)
+        sent1.add(word)
         node1 = node1.next
     
     while node2:
@@ -34,11 +32,11 @@ def sentence_similarity(sent1, sent2):
         if word == " " or hinshi in ["副詞", "助詞", "接続詞", "助動詞"]:
             node2 = node2.next
             continue
-        sent2.append(word)
+        sent2.add(word)
         node2 = node2.next
 
     # Bag of words
-    all_words = list(set(sent1 + sent2)) 
+    all_words = list(sent1 | sent2)
     vector1 = [0] * len(all_words)
     vector2 = [0] * len(all_words)
     
@@ -86,4 +84,5 @@ def generate_summary(file_name, top_n = 3):
     print("Summary: \n", "。".join(summarize_text)+"。")
 
 # make a summary
-generate_summary("softbank.txt", 5)
+generate_summary("toyota.txt", 10)
+
