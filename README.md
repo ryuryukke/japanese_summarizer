@@ -18,7 +18,7 @@ pros: A summary can be more rich than extractive type's one because we can use w
 
 cons: It is difficult to make a summary which is grammatically natural.
 
-## Detail
+## Details
 I extended [text-summarizer](https://github.com/edubey/text-summarizer) to apply to japanese as well.
 
 Similar to the system, I used [TextRank algorithm](https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf) to rank the semantically important sentences and choose the top_n of them to be a summary.
@@ -45,3 +45,5 @@ The basic idea behind PageRank algorithm is that pages that are linked to are go
 4. [MeCabをpythonで使うまで](https://qiita.com/Sak1361/items/47e9ec464ccc770cd65c)                                                                                   
 5. [日本語ストップワードの考察](https://mieruca-ai.com/ai/nlp-stopwords/)                                                                                            
 6. [大自然言語時代のための、文章要約](https://qiita.com/icoxfog417/items/d06651db10e27220c819)
+7. [日本経済新聞 ソフトバンク記事](https://www.nikkei.com/article/DGXMZO62742660Y0A810C2I00000/)
+8. [日本経済新聞 トヨタ記事](https://www.nikkei.com/article/DGXMZO62743260Y0A810C2I00000/)
