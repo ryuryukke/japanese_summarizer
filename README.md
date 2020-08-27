@@ -56,3 +56,6 @@ The basic idea behind PageRank algorithm is that pages that are linked to are go
 6. [大自然言語時代のための、文章要約](https://qiita.com/icoxfog417/items/d06651db10e27220c819)
 7. [日本経済新聞 ソフトバンク記事](https://www.nikkei.com/article/DGXMZO62742660Y0A810C2I00000/)
 8. [日本経済新聞 トヨタ記事](https://www.nikkei.com/article/DGXMZO62743260Y0A810C2I00000/)
+
+# 記事を書きました
+[自分のブログ](https://spond.hatenablog.com/entry/2020/08/20/135437)に今回のコードの説明があります。
