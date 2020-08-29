@@ -1,5 +1,5 @@
 # japanese_summarizer
-This is a text summarizer for japanese.
+This is a text summarizer for japanese.　Feel free to download it and try!
 
 ## Two Approaches for summarization
 ### 1. Extractive
@@ -38,7 +38,7 @@ PageRank algorithm is an algorithm used by Google Search to rank web pages in th
 
 The basic idea behind PageRank algorithm is that pages that are linked to are good pages, and links from even more linked pages (i.e., popular pages) are valued highly.
 
-# Result
+## Result
 ・input sentences
 
 ソフトバンクが6月末時点で、米アマゾン株約10億ドルを保有していたことがわかった。保有資産の現金化で得た資金を上場株で運用していることを明らかにしており、他にも米マイクロソフトや米テスラなどの株式も保有していた。米規制当局に提出した文書によると、6月末時点でIT企業を中心に26の米上場株を保有。傘下の英半導体設計アームの売却・再編に向けた交渉を進めているとみられる米半導体エヌビディアの株式も約1億8000万ドル保有していた。ソフトバンクは4.5兆円の保有資産の現金化を進めている。自社株買いや負債削減に充てる方針だが、資金が一時的に積み上がっている。11日の決算発表時に孫正義会長兼社長は、資金の一部を4～6月に30銘柄の上場株で試験的に運用したことを明らかにしていた。4～6月ではソフトバンク本体で1兆円超を投資し、一部を売却して約650億円の売却益を計上した。投資先を多様化するため、ソフトバンクが67%、孫氏が33%を出資して投資運用会社を立ち上げることも決めている。
@@ -46,6 +46,25 @@ The basic idea behind PageRank algorithm is that pages that are linked to are go
 ・summary
 
  自社株買いや負債削減に充てる方針だが、資金が一時的に積み上がっている。米規制当局に提出した文書によると、6月末時点でIT企業を中心に26の米上場株を保有。傘下の英半導体設計アームの売却・再編に向けた交渉を進めているとみられる米半導体エヌビディアの株式も約1億8000万ドル保有していた。4～6月ではソフトバンク本体で1兆円超を投資し、一部を売却して約650億円の売却益を計上した。投資先を多様化するため、ソフトバンクが67%、孫氏が33%を出資して投資運用会社を立ち上げることも決めている。
+ 
+## Installation of Libraries
+```
+pip install nltk
+pip install numpy
+pip install networkx
+```
+Mecab is a morphological analyzer for Japanese texts.
+### How to install MeCab
+```
+$ brew install mecab
+$ brew install mecab-ipadic
+
+# Add an additional dictionary
+$ cd ~/Downloads
+$ git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
+$ cd mecab-ipadic-neologd
+$ ./bin/install-mecab-ipadic-neologd -h
+```
 
 ## Reference
 1. [text-summarizer](https://github.com/edubey/text-summarizer)                                                                                                      
@@ -56,6 +75,7 @@ The basic idea behind PageRank algorithm is that pages that are linked to are go
 6. [大自然言語時代のための、文章要約](https://qiita.com/icoxfog417/items/d06651db10e27220c819)
 7. [日本経済新聞 ソフトバンク記事](https://www.nikkei.com/article/DGXMZO62742660Y0A810C2I00000/)
 8. [日本経済新聞 トヨタ記事](https://www.nikkei.com/article/DGXMZO62743260Y0A810C2I00000/)
+9. [MeCabダウンロード](https://techacademy.jp/magazine/24037)
 
 # 記事を書きました
 [自分のブログ](https://spond.hatenablog.com/entry/2020/08/20/135437)に今回のコードの説明があります。
