@@ -1,5 +1,7 @@
 # japanese_summarizer
-This is a text summarizer for japanese.　Feel free to download it and try!
+This is a text summarizer for japanese.　pls feel free to download it and try!
+
+If you think it's good, pls give me a star!😄
 
 ## Two Approaches for summarization
 ### 1. Extractive
