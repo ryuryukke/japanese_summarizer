@@ -77,5 +77,6 @@ $ ./bin/install-mecab-ipadic-neologd -h
 8. [日本経済新聞 トヨタ記事](https://www.nikkei.com/article/DGXMZO62743260Y0A810C2I00000/)
 9. [MeCabダウンロード](https://techacademy.jp/magazine/24037)
 
-# 記事を書きました
-[自分のブログ](https://spond.hatenablog.com/entry/2020/08/20/135437)に今回のコードの説明があります。
+# Blogs
+I wrote some detail about this implementation in [my blog](https://spond.hatenablog.com/entry/2020/08/20/135437).
+My blog is only in Japanese, sorry.
